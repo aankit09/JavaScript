@@ -13,9 +13,11 @@ console.log(addition());
 
 
 // Thrid Example One value defined and one value get
-
-function add(a,b=23)
+function someValue(){
+    return 70;
+}
+function add(a,b=23,c=someValue())
 {
-       return a+b;
+       return a+b+c;
 }
 console.log(add(6));
